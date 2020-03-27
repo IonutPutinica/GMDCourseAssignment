@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MazeLevel.unity
+- path: Assets/Scenes/ParkourLevel.unity
   isLoaded: 1
   isActive: 1
