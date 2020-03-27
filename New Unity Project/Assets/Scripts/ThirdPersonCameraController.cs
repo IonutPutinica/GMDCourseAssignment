@@ -29,8 +29,17 @@ public class ThirdPersonCameraController : MonoBehaviour
 
         transform.LookAt(Target);
 
+        /*the camera can be rotated indivudually by holding the shift key - I wanted this feature since
+         I was using it a lot back in the days when I was playing DayZ Standalone :P and it's a nice thing to have
+         */
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+        }
+        else
+        { 
         Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
         Player.rotation = Quaternion.Euler(0, mouseX, 0);
-
     }
+}
 }
