@@ -8,12 +8,12 @@ public class ThirdPersonCameraController : MonoBehaviour
     public float RotationSpeed = 1;
     public Transform Target, Player;
     float mouseX, mouseY;
-    public Transform Obstruction;
-    float zoomSpeed = 2f;
+    //public Transform Obstruction;
+    //float zoomSpeed = 2f;
 
      void Start()
     {
-        Obstruction = Target;
+        //Obstruction = Target;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -22,7 +22,7 @@ public class ThirdPersonCameraController : MonoBehaviour
     void LateUpdate()
     {
         CamControl();
-        ViewObstructed();
+        //ViewObstructed();
     }
 
     void CamControl()
@@ -46,6 +46,7 @@ public class ThirdPersonCameraController : MonoBehaviour
         Player.rotation = Quaternion.Euler(0, mouseX, 0);
     }
 }
+    /*
     void ViewObstructed()
     {
         RaycastHit hit;
@@ -74,4 +75,5 @@ public class ThirdPersonCameraController : MonoBehaviour
 
         }
     }
+    */
 }
