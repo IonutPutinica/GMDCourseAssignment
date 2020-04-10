@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Ground
+  - Pick Up Diamond
   layers:
   - Default
   - TransparentFX

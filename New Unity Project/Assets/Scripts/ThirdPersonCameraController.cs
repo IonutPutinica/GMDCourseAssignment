@@ -46,6 +46,15 @@ public class ThirdPersonCameraController : MonoBehaviour
         Player.rotation = Quaternion.Euler(0, mouseX, 0);
     }
 }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Pick Up Diamond"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
+
+   
     /*
     void ViewObstructed()
     {
