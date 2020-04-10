@@ -60,9 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AddOns\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCameraController.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCharacterController.cs" />
+    <None Include="Assets\AddOns\Models\Key\readME keys.txt" />
     <None Include="Assets\AddOns\Mg3D_Hats\README.txt" />
+    <None Include="Assets\AddOns\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GMDCourseAssignment/GMDCourseAssignment/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
